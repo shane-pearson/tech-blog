@@ -16,6 +16,7 @@ router.post('/', async (req, res) => {
       res.json(userData);
     });
   } catch (err) {
+    console.log(err)
     res.status(500).json(err);
   }
 });
@@ -45,10 +46,11 @@ router.post('/login', async (req, res) => {
       req.session.username = userData.username;
       req.session.loggedIn = true;
       
-      res.json({ user: userData, message: 'You are now logged in!' });
+      res.json({ userData, message: 'You are now logged in!' });
     });
 
   } catch (err) {
+    console.log(err)
     res.status(400).json(err);
   }
 });

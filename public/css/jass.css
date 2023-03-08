@@ -420,9 +420,10 @@ button {
 }
 
 a {
-  color: #84beda;
+  color: #beff93;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 22px;
+  margin-left: 15px;
 }
 
 /* HEIGHT / WIDTH UTILS */
